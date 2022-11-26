@@ -1,0 +1,144 @@
+/* all version */
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* navbar */
+
+.navbar {
+    background-color: #0c0966;
+    font-size: large;
+    color: white !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 29px;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7)_
+}
+
+
+/* Last Navbar */
+
+.about,
+.skills,
+.Portofolio {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    font-size: 32px;
+}
+
+.jumbotron {
+    background-attachment: fixed;
+    background-image: url(img/b.jpg);
+    height: 300px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 30px;
+    padding-top: -30px;
+}
+
+.about {
+    margin-top: -80px;
+}
+
+
+/*skils*/
+
+.card {
+    width: 100%;
+    max-width: 920px;
+    border: none !important;
+    margin: auto;
+    margin-top: -80px;
+    background-color: white;
+}
+
+.bio {
+    text-align: center;
+}
+
+.skill-bar {
+    text-align: left;
+    font-size: 12px;
+}
+
+.skill {
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.html {
+    width: 80%;
+    background-color: #1E80FA;
+}
+
+.css {
+    width: 60%;
+    background-color: greenyellow;
+}
+
+.js {
+    width: 10%;
+    background-color: #E93232;
+}
+
+.Portofolio {
+    margin-bottom: -50px;
+}
+
+footer {
+    background-color: #0c0966;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+
+/* DEKSTOP VERSION*/
+
+@media (min-width: 992px) {
+    /* Navbar */
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid white;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    /* Last Navbar */
+    /* Jumbotron */
+    .jumbotron {
+        height: 600px;
+    }
+    .jumbotron .display-4 {
+        font-size: 64px;
+    }
+    /* Last jumbotron */
+    .about .container .content .first {
+        text-align: left;
+    }
+}
